@@ -2,11 +2,11 @@ import { connect } from 'react-redux';
 import App from './app';
 import { showChangeName, initialName } from './../actions/actionState';
 
-mapStateToProps = ({ app }) =>({
-  name: app.nameReducer.name,
+const mapStateToProps = ({ app }) =>({
+  name: app.Name.name,
 })
 
-mapDispatchToProps = dispatch => ({
+const mapDispatchToProps = () => ({
   initialName: () => {
     dispatch(initialName())
   },

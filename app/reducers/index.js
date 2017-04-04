@@ -1,12 +1,12 @@
-import combineReducers from 'redux';
-import nameReducer from './nameReducer';
+import {combineReducers} from 'redux';
+import Name from './nameReducer';
 
 const currentState = (state = {}, action) => {
   return {};
 };
 // Combine Reducers
 const reducer = combineReducers({
-  currentState, nameReducer
+  currentState, Name
 });
 
 export default reducer;

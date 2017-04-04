@@ -14,7 +14,7 @@ import {
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware, combineReducers } from 'redux';
 import thunkMiddleware from 'redux-thunk';
-import createLogger from 'redux-logger';
+import {createLogger} from 'redux-logger';
 import reducers from './app/reducers';
 import App from './app/app';
 
